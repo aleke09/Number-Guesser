@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number guesser</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+
+        #guess-input{
+            border-radius: 2px;
+            outline: none;
+            width: 20rem;
+        }
+        #guess-btn{
+            border: none;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="jumbotron">
+        <h2> Number Guesser</h2>
+        <div id="game">
+            <p>guess a number between <span class="min-num"></span> and <span class="max-num"></span></p>
+            <form >
+                <input type="number" id="guess-input" placeholder="enter your guess...">
+                <input type="button" value="SUBMIT" id="guess-btn">
+            </form>
+            <p class="message"></p>
+        </div>
+    </div>
+  
+    <script src="app.js"></script>
+</body>
+</html>
