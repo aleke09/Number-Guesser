@@ -25,7 +25,7 @@ game.addEventListener('mousedown', function(e){
     }
 });
 // listen for guessBtn
-guessBtn.addEventListener('click', function(){
+guessBtn.addEventListener('click', function(e){
    let guess = parseInt(guessInput.value);
 
     // chack if won
@@ -59,6 +59,7 @@ guessBtn.addEventListener('click', function(){
         setMessage(`please enter a number between ${min} and ${max}`);
         guessesLeft = guessesLeft + 1;
     }
+     e.preventDefault();
 });
 
 // set maessage function
