@@ -18,3 +18,12 @@
     margin: 40px 0;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 667px){
+    .container{
+    max-width: 300px;
+    }    
+    #guess-btn{
+        margin-top: 5px;
+    }
+}
